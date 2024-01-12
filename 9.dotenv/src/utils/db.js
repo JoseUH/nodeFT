@@ -1,8 +1,6 @@
 const mongoose = require("mongoose");
 // mongodb+srv://usuario:contraseña@cluster0.zqnzqqp.mongodb.net/nombredevuestroproyecto
-const DB_URL =
-  "tu base de datos";
-
+const DB_URL = process.env.DB_URL
 const connect = async () => {
   try {
     // conectamos a nuestra BBDD
